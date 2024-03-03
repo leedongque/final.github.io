@@ -19,7 +19,7 @@ function getClock() {
     lastDay += day;
     const left = amount - lastDay;
 
-    clock.innerText = ( `${left}${"d"}:${hour}${"h"}:${min}${"m"}:${sec}${"s"}`);
+    clock.innerText = ( `${hour}${"h"}:${min}${"m"}:${sec}${"s"}`);
 }
 getClock();
 setInterval(getClock, 1000);
